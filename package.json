@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "update-info": "sh scripts/contributors.sh",
-    "test": "sh test.sh"
+    "test": "sh test.sh",
+    "postinstall": "mv src ../react-native-fetch-blob ; cd ../react-native-fetch-blob/ ; npm install ; cd ../react-native-fetch-blob-dev-env/ ; "
   },
   "devDependencies": {
     "body-parser": "^1.15.0",
