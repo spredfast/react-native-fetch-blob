@@ -259,8 +259,8 @@ NSOperationQueue *taskQueue;
     }
 
     __block NSURLSessionDataTask * task;
-    if (path && req.HTTPMethod == @"POST") {
-        task = [session uploadTaskWithRequest:req fromFile:path];
+    if ([options objectForKey:@"largeFileUpload"]) {
+        task = [session uploadTaskWithRequest:req fromFile:nil];
     } else {
         task = [session dataTaskWithRequest:req];
     }
