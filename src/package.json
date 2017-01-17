@@ -23,7 +23,7 @@
   ],
   "rnpm": {
     "commands": {
-      "prelink": "node ./node_modules/react-native-fetch-blob/scripts/prelink.js"
+      "prelink": "node ./node_modules/@spredfast/react-native-fetch-blob/scripts/prelink.js"
     }
   },
   "repository": {
